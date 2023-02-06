@@ -45,31 +45,31 @@ public:
 
     const string &getPacket() const;
 
-    void setPacket(const string &packet);
+    virtual void setPacket(const string &packet);
 
     const string &getPreamble() const;
 
-    void setPreamble(const string &preamble);
+    virtual void setPreamble(const string &preamble);
 
     const string &getDestinationAddress() const;
 
-    void setDestinationAddress(const string &destinationAddress);
+    virtual void setDestinationAddress(const string &destinationAddress);
 
     const string &getSourceAddress() const;
 
-    void setSourceAddress(const string &sourceAddress);
+    virtual void setSourceAddress(const string &sourceAddress);
 
     const string &getType() const;
 
-    void setType(const string &type);
+    virtual void setType(const string &type);
 
     const string &getPayload() const;
 
-    void setPayload(const string &payload);
+    virtual void setPayload(const string &payload);
 
     const string &getFcs() const;
 
-   virtual void setFcs(const string &fcs);
+    virtual void setFcs(const string &fcs);
 
 };
 
